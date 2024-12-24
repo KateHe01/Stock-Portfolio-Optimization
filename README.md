@@ -1,51 +1,59 @@
-# Stock-Portfolio-Optimization
+# Optimal ETFs Portfolio Analysis
 
 ## Overview
-This project is a comprehensive analysis focused on optimizing stock portfolios using financial models and data analysis techniques. The goal is to showcase the application of advanced financial analysis tools to achieve superior investment performance.
+This project focuses on constructing and analyzing the optimal ETFs portfolio using data-driven methodologies. By employing various financial and statistical techniques, the project aims to identify and validate a robust investment portfolio suitable for diverse economic conditions.
 
-## Project Objectives
-- Use appropriate financial models and algorithms to select the optimal investment portfolio from a wide range of industries.
-- Demonstrate the application of Python in financial modeling and simulation.
-- Evaluate stocks across ten industries to identify the top performers.
-- Utilize historical data to compare performance against benchmarks such as the S&P 500.
-- Enhance Python programming skills through the implementation of various financial models and data analysis techniques.
+## Investor Background
+- **Age** : 25+
+- **Investment Horizon**: Long-term (10+ years)  
+- **Risk Tolerance**: Moderate  
+- **Preference**: Favor growth-oriented exposure to the technology sector while maintaining diversification with defensive assets such as consumer staples and gold.  
 
-## Industries Analyzed
-- Renewable Energy
-- Finance
-- Artificial Intelligence and Technology
-- Biotechnology
-- Consumer Staples
-- Commodities
-- Health Technology
-- Emerging Markets
-- Real Estate
-- Industry
+## Project Objective
+The primary goal is to design an optimal portfolio of ETFs that balances risk and return effectively while maintaining stability across various economic scenarios. Key objectives include:
+- Portfolio optimization using Monte Carlo simulations, Sharpe ratio maximization, and risk minimization.
+- Validation through CAPM analysis, VaR, CVaR, stress testing, and scenario analysis.
+- Comprehensive risk and return attribution for portfolio evaluation.
+
+## Project Outline
+1. **Data Collection**: Downloaded historical ETF data and preprocessed monthly returns.
+2. **Preliminary Analysis**: Evaluated ETF performance, correlation matrices, and covariance stability.
+3. **Portfolio Optimization**:
+   - Balanced risk and return through Sharpe ratio optimization while ensuring reasonable weight allocation.
+   - Monte Carlo simulations to visualize the efficient frontier.
+   - Applied VaR (Value at Risk) and CVaR (Conditional Value at Risk) to evaluate tail risk.
+4. **Validation**:
+   - CAPM analysis to compute Alpha, Beta, and R-squared for market sensitivity and excess returns.
+   - Stress testing to assess resilience under extreme market shocks.
+   - Scenario analysis across economic periods (growth, recession, recovery).
+   - Backtesting for historical performance evaluation.
+5. **Attribution Analysis**: Risk and return contributions for each ETF in the optimal portfolio.
 
 ## Methodology
-1. **Data Collection**: Downloaded historical data from Yahoo Finance covering the years 2014 to 2024.
-2. **Data Analysis**:
-   - Calculated annual and log-returns for selected stocks.
-   - Analyzed volatility, skewness, and kurtosis.
-   - Used the Sharpe Ratio to assess risk-adjusted returns.
-3. **Financial Models and Techniques**:
-   - **CAPM (Capital Asset Pricing Model)**: Used to estimate the expected return of assets based on their risk relative to the market.
-   - **GARCH Model**: Used to simulate volatility.
-   - **ARIMA Model**: Applied to understand the patterns and behaviors in stock prices over time.
-   - **Risk Management**: Evaluated using Value at Risk (VaR) and Conditional Value at Risk (CVaR).
-   - **Monte Carlo Simulation**: Used to simulate and analyze the risk and return profiles of investment portfolios.
-
-## Project Components
-1. **Portfolio Optimization**: Constructed and optimized portfolios based on historical performance and risk metrics.
-2. **Risk Management**: Assessed and managed the risk associated with the investment portfolios using advanced risk measurement techniques.
-3. **Time Series Analysis**: Analyzed stock price movements and trends over time to inform investment decisions.
+- **Monte Carlo Simulations**: Generated random portfolios to visualize the efficient frontier and compare against the optimized portfolio.
+- **Sharpe Ratio Optimization**: Optimized portfolio weights to achieve a reasonable balance between risk-adjusted returns and practical weight allocation.
+- **VaR and CVaR**: Quantified potential losses in extreme market conditions, assessing tail risk under historical and parametric assumptions.
+- **CAPM Analysis**: Calculated Alpha (excess returns), Beta (market sensitivity), and R-squared (explanatory power) to evaluate the portfolio's performance relative to the market.
+- **Stress Testing**: Simulated market shocks to evaluate portfolio resilience under adverse conditions.
+- **Scenario Analysis**: Assessed portfolio performance across defined economic periods, including Global Growth, COVID-19 Recession, and Economic Recovery.
+- **Attribution Analysis**: Quantified each ETF's contribution to portfolio risk and returns to ensure balanced diversification.
 
 ## Results
-The analysis demonstrated significant improvements in portfolio performance through the application of advanced financial models and data analysis techniques. The optimized portfolio, consisting of stocks from various industries such as AMZN, MDT, PEP, JPM, and LMT, significantly outperformed the S&P 500 benchmark.
-
-The Monte Carlo simulation results indicate that the optimized portfolio achieved an average annual return of 20.91%, with a volatility of 18.32% and a Sharpe Ratio of 1.1410. In comparison, the S&P 500 (SPY) showed an annual return of 14.25%, with a volatility of 17.52% and a Sharpe Ratio of 0.8135.
-
-These results highlight the effectiveness of the financial models used in this project, particularly in risk management and return optimization. The higher Sharpe Ratio of the optimized portfolio indicates a better risk-adjusted return compared to the S&P 500, showcasing the potential for enhanced investment performance through data-driven portfolio optimization.
+- **Optimal Portfolio Performance**:
+  - Delivered the most balanced Sharpe ratio when compared to Monte Carlo-simulated portfolios, where the highest Sharpe ratio weights were deemed impractical due to concentrated risk allocations.
+  - Demonstrated consistent performance across diverse economic scenarios.
+  - Balanced risk-return contributions across growth and defensive assets.
+- **Scenario Analysis**:
+  - Maintained strong performance during Global Growth with minimal drawdowns.
+  - Showed resilience in the COVID-19 Recession with solid returns and moderate volatility.
+  - Adapted effectively during the Economic Recovery phase.
+- **Risk Attribution**:
+  - Technology sector (QQQ) drove returns but contributed the most risk.
+  - Defensive sectors (IAU, XLP, XLV) balanced growth with stability.
+- **Tail Risk Metrics**:
+  - VaR and CVaR provided insights into potential losses during extreme market conditions, validating the portfolio's robustness under tail-risk scenarios.
 
 ## Conclusion
-This project showcases the application of financial models and data analysis in creating optimized investment portfolios, providing valuable insights for achieving superior returns. The integration of sophisticated financial models and Python programming demonstrates the potential for developing robust investment strategies that can outperform traditional market benchmarks.
+This project confirms that the selected optimal portfolio is robust, resilient, and well-diversified. While it does not achieve the absolute highest Sharpe ratio due to practical weight constraints, it delivers the most balanced performance, ensuring reasonable risk-return trade-offs. Its strong performance across CAPM analysis, VaR, CVaR, stress testing, and scenario evaluations validates its superiority over Monte Carlo-generated alternatives. The portfolio balances high returns from growth-oriented assets with stability from defensive sectors, making it a reliable choice for long-term investment.
+
+
