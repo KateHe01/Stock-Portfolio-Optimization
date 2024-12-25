@@ -54,8 +54,3 @@ The primary goal is to design an optimal portfolio of ETFs that balances risk an
 
 ## Conclusion
 This project confirms that the selected optimal portfolio is robust, resilient, and well-diversified. While it does not achieve the absolute highest Sharpe ratio due to practical weight constraints, it delivers the most balanced performance, ensuring reasonable risk-return trade-offs. Its strong performance across CAPM analysis, VaR, CVaR, stress testing, and scenario evaluations validates its superiority over Monte Carlo-generated alternatives. The portfolio balances high returns from growth-oriented assets with stability from defensive sectors, making it a reliable choice for long-term investment.
-
-## How to Use
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/optimal-etfs-portfolio-analysis.git
