@@ -1,4 +1,4 @@
-# Optimal ETFs Portfolio Analysis
+# ETFs Portfolio Construction and Mean-Variance Optimization
 
 ## Overview
 This project focuses on constructing and analyzing the optimal ETFs portfolio using data-driven methodologies. By employing various financial and statistical techniques, the project aims to identify and validate a robust investment portfolio suitable for diverse economic conditions.
